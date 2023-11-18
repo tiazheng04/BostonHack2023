@@ -1,0 +1,14 @@
+.test{
+    display: flex;
+    flex-direction: column;
+}
+
+.pic{
+    width: 50px;
+    background-color: aquamarine;
+}
+
+.text{
+    width: 50px;
+    background-color: blue;
+}
