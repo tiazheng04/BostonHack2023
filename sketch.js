@@ -38,12 +38,10 @@ function draw() {
   rect(pX - 10, pY - 10, 20, 20);
 
 
-    if (keyIsDown(87)) pY -= spd;
-    if (keyIsDown(83)) pY += spd;
-    if (keyIsDown(65)) pX -= spd; 
-    if (keyIsDown(68)) pX += spd;
-    // if (keyIsDown(122)) toggleFullscreen();
-        console.log("f11 pressed");
+    if (keyIsDown(87)||keyIsDown(38)) pY -= spd;
+    if (keyIsDown(83)||keyIsDown(40)) pY += spd;
+    if (keyIsDown(65)||keyIsDown(37)) pX -= spd; 
+    if (keyIsDown(68)||keyIsDown(39)) pX += spd;
 
     if (pY > windowHeight-50) pY = windowHeight-50;
     if (pX > windowWidth-50) pX = windowWidth-50;
